@@ -66,9 +66,7 @@ function crea_lista_immagini_uguali(righe, colonne, difficolta){
         }
         contatore++
     }
-    console.log(lista_risultato)
     liste_risultato.push(lista_risultato)
-    //concateno una copia di lista_risultato
 
     for (const iterator of liste_risultato) {
         risultato = risultato.concat(iterator)
@@ -232,7 +230,7 @@ function logica_orologio(){
         sec = 0
         orologio[2].innerHTML = '0'+sec
         min++
-        if (sec < 10){
+        if (min < 10){
             orologio[1].innerHTML = '0'+min
         }else{
             orologio[1].innerHTML = min
@@ -241,7 +239,7 @@ function logica_orologio(){
         min = 0
         orologio[1].innerHTML = '0'+min
         ore++
-        if (sec < 10){
+        if (ore < 10){
             orologio[0].innerHTML = '0'+ore
         }else{
             orologio[0].innerHTML = ore
